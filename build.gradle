@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'me.champeau.gradle.jmh' version '0.5.0'
+}
+
+group 'dev.s1ck'
+version '0.0.1'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    jmh group: 'org.openjdk.jmh', name: 'jmh-core', version: '1.26'
+    testImplementation(platform('org.junit:junit-bom:5.7.0'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+}
