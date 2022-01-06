@@ -4,6 +4,7 @@ import com.carrotsearch.hppc.IntIntHashMap;
 import org.openjdk.jmh.annotations.*;
 
 import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
 
 /**
  * https://richardstartin.github.io/posts/5-java-mundane-performance-tricks#size-hashmaps-whenever-possible
@@ -12,6 +13,8 @@ import java.util.HashMap;
 @Warmup(iterations = 5, time = 1)
 @Measurement(iterations = 10, time = 1)
 @State(Scope.Benchmark)
+@BenchmarkMode(Mode.AverageTime)
+@OutputTimeUnit(TimeUnit.NANOSECONDS)
 public class HashMapResizeBenchmark {
 
     @Param({"10", "14"})

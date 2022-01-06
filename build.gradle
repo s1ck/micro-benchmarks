@@ -13,10 +13,11 @@ repositories {
 
 jmh {
     includes = [
-//            'dev.s1ck.HashMapResizeBenchmark',
+            'dev.s1ck.HashMapResizeBenchmark',
             'dev.s1ck.HppcHashMapResizeBenchmark',
-//            'dev.s1ck.RequiredBytesBenchmark',
+            'dev.s1ck.RequiredBytesBenchmark',
     ]
+    profilers = ['gc']
 }
 
 java {
