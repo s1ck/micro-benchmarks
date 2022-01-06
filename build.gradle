@@ -16,7 +16,8 @@ jmh {
 //            'dev.s1ck.HashMapResizeBenchmark',
 //            'dev.s1ck.HppcHashMapResizeBenchmark',
 //            'dev.s1ck.CompositeLookupBenchmark',
-            'dev.s1ck.EnumIterationBenchmark',
+//            'dev.s1ck.EnumIterationBenchmark',
+            'dev.s1ck.EnumMapBenchmark',
 //            'dev.s1ck.RequiredBytesBenchmark',
     ]
     profilers = ['gc']
