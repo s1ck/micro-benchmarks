@@ -19,10 +19,11 @@ jmh {
 //            'dev.s1ck.EnumIterationBenchmark',
 //            'dev.s1ck.EnumMapBenchmark',
 //            'dev.s1ck.LoopFissionBenchmark',
-            'dev.s1ck.IncrementsBenchmark',
+//            'dev.s1ck.IncrementsBenchmark',
+            'dev.s1ck.StringConcatBenchmark',
 //            'dev.s1ck.RequiredBytesBenchmark',
     ]
-//    profilers = ['gc' /*, 'perfasm' */]
+//    profilers = ['gc']
     profilers = ['perfasm']
 }
 
